@@ -2,9 +2,8 @@
 /**
  * RockMigrationsDemo
  *
- * @author Bernhard Baumrock, 08.01.2019
+ * @author #author#, #date#
  * @license Licensed under MIT
- * @link https://www.baumrock.com
  */
 class RockMigrationsDemo extends WireData implements Module {
 
