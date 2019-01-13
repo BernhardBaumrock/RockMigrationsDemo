@@ -11,5 +11,5 @@ $info = array(
   'summary' => 'RockMigrationsDemo',
   'singular' => true,
   'autoload' => true,
-  'icon' => 'bolt',
+  'icon' => '#icon#',
 );
