@@ -1,12 +1,13 @@
 <?php namespace ProcessWire;
-$this->data->tpl = "demoTemplate003";
-
+/**
+ * Remove the search template and page.
+ */
 $upgrade = function(RockMigrations $rm) {
-  d("--- execute upgrade 003 ---");
-  $rm->createTemplate($rm->data->tpl);
-}; // dont forget the semicolon!
+  $rm->deleteTemplate('search');
+};
 
 $downgrade = function(RockMigrations $rm) {
-  d("--- execute downgrade 003 ---");
-  $rm->removeTemplate($rm->data->tpl);
-}; // dont forget the semicolon!
+  $rm->createTemplate('search');
+  $rm->addFieldToTemplate('title', 'search');
+  $rm->createPage('Search', 'search', 'search', 1, [Page::statusHidden]);
+};
