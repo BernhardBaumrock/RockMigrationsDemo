@@ -1,5 +1,7 @@
 # RockMigrationsDemo
 
+Please see the migration files in the `RockMigrations` folder that are explained here:
+
 ## 0.0.1
 
 Create a new field: https://github.com/BernhardBaumrock/RockMigrationsDemo/blob/master/RockMigrations/0.0.1.php
